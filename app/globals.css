@@ -5,6 +5,70 @@
   --foreground: #171717;
 }
 
+:root {
+  /* === CHOOSE YOUR COLOR SCHEME === 
+     Uncomment ONE of the following color schemes:
+     - Green (Emerald) - Default
+     - Blue (Cyan)
+     - Purple (Violet)
+     - Red (Rose)
+     - Orange (Amber)
+  */
+
+  /* Green (Emerald) - Default */
+  --accent-primary: #10b981;
+  --accent-primary-dark: #059669;
+  --accent-primary-light: #34d399;
+  --accent-glow: rgba(16, 185, 129, 0.5);
+
+  /* Blue (Cyan) - Uncomment to use
+  --accent-primary: #06b6d4;
+  --accent-primary-dark: #0891b2;
+  --accent-primary-light: #22d3ee;
+  --accent-glow: rgba(6, 182, 212, 0.5);
+  */
+
+  /* Purple (Violet) - Uncomment to use 
+  --accent-primary: #a855f7;
+  --accent-primary-dark: #9333ea;
+  --accent-primary-light: #c084fc;
+  --accent-glow: rgba(168, 85, 247, 0.5);
+ */
+
+  /* Red (Rose) - Uncomment to use
+  --accent-primary: #f43f5e;
+  --accent-primary-dark: #e11d48;
+  --accent-primary-light: #fb7185;
+  --accent-glow: rgba(244, 63, 94, 0.5);
+  */
+
+  /* Orange (Amber) - Uncomment to use
+  --accent-primary: #f59e0b;
+  --accent-primary-dark: #d97706;
+  --accent-primary-light: #fbbf24;
+  --accent-glow: rgba(245, 158, 11, 0.5);
+  */
+
+  /* Base theme colors */
+  --font-size: 16px;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --radius: 0.625rem;
+
+  /* Background colors */
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-surface: rgba(17, 24, 39, 0.5);
+  --bg-surface-secondary: rgba(31, 41, 55, 0.5);
+
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: rgb(156 163 175);
+
+  /* Border color */
+  --border-color: rgb(31 41 55);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -22,5 +86,51 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.LogoFont {
+  font-family: "Slackside One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Theme: Emerald */
+.theme-emerald {
+  --accent-primary: #10b981;
+  --accent-primary-dark: #059669;
+  --accent-primary-light: #34d399;
+  --accent-glow: rgba(16, 185, 129, 0.5);
+}
+
+/* Theme: Cyan */
+.theme-cyan {
+  --accent-primary: #06b6d4;
+  --accent-primary-dark: #0891b2;
+  --accent-primary-light: #22d3ee;
+  --accent-glow: rgba(6, 182, 212, 0.5);
+}
+
+/* Theme: Violet */
+.theme-violet {
+  --accent-primary: #a855f7;
+  --accent-primary-dark: #9333ea;
+  --accent-primary-light: #c084fc;
+  --accent-glow: rgba(168, 85, 247, 0.5);
+}
+
+/* Theme: Rose */
+.theme-rose {
+  --accent-primary: #f43f5e;
+  --accent-primary-dark: #e11d48;
+  --accent-primary-light: #fb7185;
+  --accent-glow: rgba(244, 63, 94, 0.5);
+}
+
+/* Theme: Amber */
+.theme-amber {
+  --accent-primary: #f59e0b;
+  --accent-primary-dark: #d97706;
+  --accent-primary-light: #fbbf24;
+  --accent-glow: rgba(245, 158, 11, 0.5);
 }

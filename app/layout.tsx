@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Yellowtail, Roboto, Slackside_One, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,6 +10,36 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const yellowtail = Yellowtail({
+  weight: "400",
+  variable: "--font-yellowtail",
+  subsets: ["latin"],
+});
+
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto",
+  subsets: ["latin"],
+});
+
+const slacksideOne = Slackside_One({
+  weight: "400",
+  variable: "--font-slackside",
+  subsets: ["latin"],
+});
+
+const openSans = Open_Sans({
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-opensans",
+  subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
   subsets: ["latin"],
 });
 
@@ -25,9 +56,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${slacksideOne.variable} ${openSans.variable} ${poppins.variable} antialiased`}
       >
-        {children}
+
+          {children}
+
       </body>
     </html>
   );
