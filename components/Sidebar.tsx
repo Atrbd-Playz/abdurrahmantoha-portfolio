@@ -119,11 +119,11 @@ export function Sidebar() {
                     isActive
                       ? {
                           background: `linear-gradient(to bottom right, var(--accent-primary), var(--accent-primary-dark))`,
-                          color: '#ffffff',
+                          color: 'white',
                         }
                       : {
                           backgroundColor: 'rgba(17, 24, 39, 0.5)',
-                          color: 'rgb(156 163 175)',
+                          color: 'white',
                         }
                   }
                 >
@@ -152,7 +152,7 @@ export function Sidebar() {
                 {/* Active indicator */}
                 {isActive && (
                   <motion.div
-                    className="absolute -left-4 top-1/2 -translate-y-1/2 w-1 h-8 rounded-r-full"
+                    className="absolute -left-4 top-1/2 text-white -translate-y-1/2 w-1 h-8 rounded-r-full"
                     style={{
                       background: `linear-gradient(to bottom, var(--accent-primary), var(--accent-primary-dark))`,
                     }}
@@ -164,7 +164,7 @@ export function Sidebar() {
                 {/* Glow effect */}
                 {isActive && (
                   <motion.div
-                    className="absolute -inset-2 blur-lg opacity-30 rounded-xl"
+                    className="absolute -inset-2 blur-lg text-white opacity-30 rounded-xl"
                     style={{
                       background: `linear-gradient(to right, var(--accent-primary), var(--accent-primary-dark))`,
                     }}
@@ -182,20 +182,6 @@ export function Sidebar() {
             );
           })}
         </nav>
-
-        {/* Scroll Progress Indicator */}
-        <div 
-          className="w-1 h-32 rounded-full overflow-hidden"
-          style={{ backgroundColor: 'var(--border-color)' }}
-        >
-          <motion.div
-            className="w-full origin-top"
-            style={{ 
-              scaleY,
-              background: `linear-gradient(to bottom, var(--accent-primary), var(--accent-primary-dark))`,
-            }}
-          />
-        </div>
       </motion.aside>
 
       {/* Mobile Menu Button */}

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
 
 export function Hero() {
   const scrollToNext = () => {
@@ -11,7 +10,7 @@ export function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen  flex items-center justify-center overflow-hidden ">
+    <div id="home" className="relative min-h-screen  flex items-center justify-center overflow-hidden ">
       {/* Hero Background */}
       <div className=" bg-[url('/hero-bg.jpg')] bg-cover bg-center w-full h-full absolute"></div>
       <div className="absolute inset-0 bg-linear-to-t from-black via-transparent blur-3xl to-transparent opacity-75"></div>
